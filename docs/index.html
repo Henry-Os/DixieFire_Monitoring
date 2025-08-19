@@ -38,11 +38,13 @@
       width: 100%;
       height: 600px;
       border: none;
+      align-self: center;
     }
 
-    .half-height {
-      height: 300px;
+    .three-quarter-height {
+      height: 450px; /* 3/4 of 600px */
       width: 100%;
+      align-self: center;
     }
 
     p {
@@ -54,7 +56,7 @@
 </head>
 <body>
 
-  <h1> Dixie Fire Monitoring</h1>
+  <h1>🔥 Dixie Fire Monitoring</h1>
   <p>This page presents highlights of burn severity and vegetation recovery following the 2021 Dixie Fire.</p>
 
   <!-- 🔥 Burn Severity Section -->
@@ -67,7 +69,7 @@
 
   <div class="map-container">
     <h3>Burned Area by Severity Class</h3>
-    <iframe src="burn_severity_chart.html" class="half-height"></iframe>
+    <iframe src="burn_severity_chart.html" class="three-quarter-height"></iframe>
   </div>
 
   <!-- 🌿 Vegetation Recovery Section -->
@@ -75,12 +77,12 @@
 
   <div class="map-container">
     <h3>Seasonal Median NDVI by Severity Class</h3>
-    <iframe src="NDVI_regrowthMonitoring.html" class="half-height"></iframe>
+    <iframe src="NDVI_regrowthMonitoring.html" class="three-quarter-height"></iframe>
   </div>
 
   <div class="map-container">
     <h3>Land Cover Change Using the Dynamic World Data</h3>
-    <iframe src="dw_change_detection.gif"></iframe>
+    <iframe src="dw_change_detection.gif" class="three-quarter-height"></iframe>
   </div>
 
   <div class="map-container">
