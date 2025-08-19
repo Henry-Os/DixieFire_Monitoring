@@ -1,100 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Dixie Fire Monitoring</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dixie Fire Post-Fire Assessment</title>
   <style>
     body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 2em;
-      background: #f9f9f9;
-      text-align: center;
-    }
-
-    h1 {
-      margin-bottom: 0.5em;
-    }
-
-    h2 {
-      margin-top: 2em;
-      margin-bottom: 0.5em;
-      color: #333;
-    }
-
-    .map-container {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
       max-width: 900px;
-      margin: 1em auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 8px;
-      background: #fff;
-      padding: 1em;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      margin: 0 auto;
+      padding: 20px;
     }
-
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    ol {
+      padding-left: 20px;
+    }
     iframe {
       width: 100%;
-      height: 600px;
       border: none;
-      display: block;
+      margin-top: 10px;
     }
-
     .three-quarter-height {
-      height: 450px;
-      width: 80%;
-      margin: 0 auto;
-      display: block;
+      height: 600px;
     }
-
-    p {
-      max-width: 800px;
-      margin: 0 auto 1em;
-      color: #555;
+    .map-container {
+      margin-bottom: 40px;
     }
   </style>
 </head>
 <body>
 
-  <h1> Dixie Fire Monitoring</h1>
-  <p>This page presents highlights of burn severity and vegetation recovery following the 2021 Dixie Fire.</p>
+  <h1>Post-Fire Assessment: 2021 Dixie Fire</h1>
 
-  <!-- 🔥 Burn Severity Section -->
-  <h2>🔥 Burn Severity Assessment</h2>
+  <p><strong>Post-fire data and assessment play a critical role in guiding emergency rehabilitation and long-term restoration efforts.</strong>  
+  This dashboard presents key visualizations from the 2021 Dixie Fire, highlighting burn severity, vegetation recovery, and land cover transitions across affected landscapes.</p>
 
-  <div class="map-container">
+  <p><strong>Explore the results:</strong></p>
+  <ol>
+    <li><a href="#burn-severity-map">Burn Severity Map</a></li>
+    <li><a href="#burn-severity-chart">Burned Area by Severity Class</a></li>
+    <li><a href="#ndvi-chart">Seasonal Median NDVI by Severity Class</a></li>
+    <li><a href="#dw-change">Land Cover Change Using Dynamic World Data</a></li>
+    <li><a href="#sankey-chart">Land Cover Transition from 2020 to 2024</a></li>
+  </ol>
+
+  <div class="map-container" id="burn-severity-map">
     <h3>Burn Severity Map</h3>
-    <iframe src="burn_severity_map.html"></iframe>
+    <iframe src="burn_severity_map.html" height="500"></iframe>
   </div>
 
-  <div class="map-container">
+  <div class="map-container" id="burn-severity-chart">
     <h3>Burned Area by Severity Class</h3>
     <iframe src="burn_severity_chart.html" class="three-quarter-height"></iframe>
   </div>
 
-  <!-- 🌿 Vegetation Recovery Section -->
-  <h2>🌿 Vegetation Recovery Monitoring</h2>
-
-  <div class="map-container">
+  <div class="map-container" id="ndvi-chart">
     <h3>Seasonal Median NDVI by Severity Class</h3>
     <iframe src="NDVI_regrowthMonitoring.html" class="three-quarter-height"></iframe>
   </div>
 
-  <div class="map-container">
+  <div class="map-container" id="dw-change">
     <h3>Land Cover Change Using the Dynamic World Data</h3>
     <iframe src="dw_change_detection.gif" class="three-quarter-height"></iframe>
   </div>
 
-  <div class="map-container">
+  <div class="map-container" id="sankey-chart">
     <h3>Land Cover Transition from 2020 to 2024</h3>
-    <iframe src="sankey_change_detection.html"></iframe>
+    <iframe src="sankey_change_detection.html" height="500"></iframe>
   </div>
-
-  <footer style="margin-top: 3em; font-size: 0.9em; color: #888;">
-    <p>Created by Henry | Last updated: August 2025</p>
-    <p><a href="https://github.com/Henry-Os/DixieFire_Monitoring/tree/main" target="_blank">🔗 View Full Repository</a></p>
-  </footer>
 
 </body>
 </html>
