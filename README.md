@@ -6,6 +6,8 @@ This project sought to assess post-fire damage and monitor vegetation recovery f
 
 ## Data
 [1. Harmonized Landsat Sentinel](https://search.earthdata.nasa.gov/search?q=hls)
+
 [2. Dynamic World](https://dynamicworld.app/)
+
 [3. MTBS Burned Area Boundaries](https://burnseverity.cr.usgs.gov/products/mtbs)
 
