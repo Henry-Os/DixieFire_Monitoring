@@ -1,5 +1,5 @@
 ## Dixie Fire Burn Severity And Vegetation Recovery Mapping
-This project assesses post-fire damage following the 2021 Dixie Fire in Northern California. The objectives were to:
+This project evaluates post-fire damage following the 2021 Dixie Fire in Northern California. The objectives were to:
 1. Map burned area and severity using spectral indices like Normalized Burn Ration (NBR).
 2. Monitor vegetation recovery using spectral indices like Normalized Vegetation Difference Index (NDVI) and Enhanced Vegetation Index (EVI).
 3. Monitor changes in land cover. 
